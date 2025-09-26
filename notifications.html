@@ -8,15 +8,14 @@
 </head>
 <body>
      <header>
-        <nav>
+         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./signup.html">Sign Up</a></li>
+                <li><a href="./signup.html">SignUp</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="mentorship.html">Mentorship</a></li>
-                <li><a href="notifications.html">Notification</a></li>
-                <li><a href="opportunities.html">opportunities</a></li>
+                <li><a href="mentorship.html">Mentor</a></li>
+                <li><a href="notifications.html">Notify</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="setting.html">Settings</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
@@ -46,8 +45,47 @@
                     </div>
                 </li>
             </ul>
-        </nav>
+        </nav> 
+        <img src="burger-bar.png" alt="" id="toggleBtn" style="width: 2rem; object-fit: contain; margin-right: 1rem;">
     </header>
+    <nav class="hidden" id="box">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./signup.html">SignUp</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="mentorship.html">Mentor</a></li>
+                <li><a href="notifications.html">Notify</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Recruiter</button>
+                    <div class="dropdown-content">
+                    <a href="./recruiter/dashboard.html">Dashboard</a>
+                    <a href="./recruiter/profile.html">Profile</a>
+                    <a href="./recruiter/learning.html">Learning Hub</a>
+                    <a href="./recruiter/applicant.html">Applicant</a>
+                    <a href="./recruiter/mentor.html">Mentor</a>
+                    <a href="./recruiter/search.html">Search</a>
+                    <a href="./recruiter/listing.html">Listing</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mentor</button>
+                        <div class="dropdown-content">
+                        <a href="./mentor/dashboard.html">Dashboard</a>
+                        <a href="./mentor/profile.html">Profile</a>
+                        <a href="./mentor/learning.html">Learning Hub</a>
+                        <a href="./mentor/request.html">Request</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </nav> 
     <main>
         <div class="logo">
             <img src="Notification.png" alt="">
@@ -60,4 +98,12 @@
          </div>
     </main>
 </body>
+<script>
+    const btn = document.getElementById('toggleBtn');
+    const box = document.getElementById('box');
+
+    btn.addEventListener('click', () => {
+      box.classList.toggle('hidden'); 
+    });
+  </script>
 </html>
