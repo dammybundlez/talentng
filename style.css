@@ -1,14 +1,47 @@
 
         body{
             background: #fff;
+            margin: 0;
         }
 
-        .logo{
-            /* padding: 10px;
-            background: #e1e0e0aa;
-            margin: 0.5rem;
-            width: 22%;
-            height: auto; */
+        header img {
+            display: none;
+            text-align: right;
+            cursor: pointer;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;    
+            align-items: center;
+        }
+
+        header nav {
+            width: 100%;
+        }
+
+        header ul a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            color: black;
+        }
+
+        header ul a:hover {
+            text-decoration: underline;
+            color: rgb(19, 97, 146);
+        }
+
+        header {
+            background-color: rgb(162, 176, 176);
+            width: 100%;
+            position: fixed;
+            margin-bottom: 3rem;
+            display: flex;
+            top: 0;
+            justify-content: space-between;
         }
 
         .logo.green > div{
@@ -31,7 +64,6 @@
             width: 100%;
             height:auto;
             object-fit: cover;
-            /* object-position: center; */
         }
 
         p{
@@ -41,49 +73,139 @@
             font-size: large;
             text-transform: capitalize;
         }
-
+        
         main{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10;
             width: 100%;
-            /* padding: 10px; */
             align-content:flex-start;
+            margin-top: 6rem;
         }
+
+          .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      padding: 10px 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block; 
+    }
+
 
          @media screen and (max-width : 567px) {
             .logo {
-               
                 width: 100%;
             }
+
+            header nav {
+                display: none;
+            }
+
+            header img {
+                display: block;
+                padding: 0.4rem;
+            }
+
         }
 
-        @media screen and (min-width : 567px) {
+        
+        @media screen and (max-width: 768px) {
             .logo {
-             
                 width: 100%;
             }
+
+             header nav {
+                display: none;
+            }
+
+            header img {
+                display: block;
+                padding: 0.4rem;
+            }         
         }
+
+        @media screen and (min-width: 768px) {
+            .logo {
+                width: 100%;
+            }
+
+             header nav {
+                display: none;
+            }
+
+            header img {
+                display: flex;
+                padding: 0.4rem;
+            }
+          
+        }
+
+        @media screen and (min-width: 966px) {
+            .logo {
+                width: 100%;
+            }
+
+             header nav {
+                display: flex;
+            }
+
+            header img {
+                display: none;
+                padding: 0.4rem;
+            }
+
+            #box   {
+                display: none;
+            }
+          
+        }
+
+        /* @media screen and (max-width: 966px) {
+            .logo {
+                width: 100%;
+            }
+
+             header nav {
+                display: flex;
+            }
+
+            header img {
+                display: flnoneex;
+                padding: 0.4rem;
+            }
+          
+        } */
+
        
-
-        @media screen and (min-width : 768px) {
-            .logo {
-                width: 100%;
-                
-            }
-        }
-
-        @media screen and (min-width : 992px) {
-            .logo {
-                width: 100%;
-                
-            }
-        }
-    
-        @media screen and (min-width : 1200px) {
-            .logo {
-                width: 100%;
-             
-            }
-        }

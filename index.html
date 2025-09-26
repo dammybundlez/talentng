@@ -5,8 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talenting</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+<style>
+    .hidden {
+        display: none;
+    }
+
+    #box {
+        position: absolute;
+        background-color: rgb(162, 176, 176);
+        width: 100%;
+        top: 3rem
+    }
+
+    #box ul li a:hover {
+        text-decoration: underline;
+        color: rgb(19, 97, 146);
+    }
+
+    #box ul li a {
+         text-decoration: none;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        color: black;
+    }
+
+    #box ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+</style>
 <body>
+    <header>
+         <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./signup.html">SignUp</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="mentorship.html">Mentor</a></li>
+                <li><a href="notifications.html">Notify</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Recruiter</button>
+                    <div class="dropdown-content">
+                    <a href="./recruiter/dashboard.html">Dashboard</a>
+                    <a href="./recruiter/profile.html">Profile</a>
+                    <a href="./recruiter/learning.html">Learning Hub</a>
+                    <a href="./recruiter/applicant.html">Applicant</a>
+                    <a href="./recruiter/mentor.html">Mentor</a>
+                    <a href="./recruiter/search.html">Search</a>
+                    <a href="./recruiter/listing.html">Listing</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mentor</button>
+                        <div class="dropdown-content">
+                        <a href="./mentor/dashboard.html">Dashboard</a>
+                        <a href="./mentor/profile.html">Profile</a>
+                        <a href="./mentor/learning.html">Learning Hub</a>
+                        <a href="./mentor/request.html">Request</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
+        <img src="burger-bar.png" alt="" id="toggleBtn" style="width: 2rem; object-fit: contain; margin-right: 1rem;">
+    </header>
+    <nav class="hidden" id="box">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./signup.html">SignUp</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="mentorship.html">Mentor</a></li>
+                <li><a href="notifications.html">Notify</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="setting.html">Settings</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Recruiter</button>
+                    <div class="dropdown-content">
+                    <a href="./recruiter/dashboard.html">Dashboard</a>
+                    <a href="./recruiter/profile.html">Profile</a>
+                    <a href="./recruiter/learning.html">Learning Hub</a>
+                    <a href="./recruiter/applicant.html">Applicant</a>
+                    <a href="./recruiter/mentor.html">Mentor</a>
+                    <a href="./recruiter/search.html">Search</a>
+                    <a href="./recruiter/listing.html">Listing</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Mentor</button>
+                        <div class="dropdown-content">
+                        <a href="./mentor/dashboard.html">Dashboard</a>
+                        <a href="./mentor/profile.html">Profile</a>
+                        <a href="./mentor/learning.html">Learning Hub</a>
+                        <a href="./mentor/request.html">Request</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav> 
     <main>
         <div class="logo">
             <img src="MacBook Pro 14_ - 1.png" alt="">
@@ -38,273 +150,14 @@
         <div class="logo">
             <img src="Detailed forn Talent-1.png" alt="">
         </div>
-        <div class="logo">
-            <img src="Create Account.png" alt=""> 
-        </div>
-        <div class="logo">
-            <img src="Create Account with password.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Create Account with password/Error.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Create Account with password-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Create Account with password-1.png" alt="">
-        </div>
-
-        <div class="logo">
-            <img src="Login.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Login/Error.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Login-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Forgot Password.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Forgot Password-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Change Password.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Dashboard.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Dashboard-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Dashboard-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Complete Profile.png" alt=""> 
-        </div>
-        <div class="logo">
-            <img src="Complete Profile-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Complete Profile-2.png" alt="">  
-        </div>
-        <div class="logo">
-            <img src="Complete Profile-3.png" alt=""> 
-        </div>
-        <div class="logo">
-            <img src="Complete Profile-4.png" alt="">    
-        </div>
-        <div class="logo">
-            <img src="My Profile.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="My Profile-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="My Profile-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Opportunities.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Opportunities-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Opportunities-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Opportunities-3.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Opportunities-4.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Mentorship.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Mentorship-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Mentorship-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Mentorship-3.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Mentorship-4.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Calendar/Empty.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Calendar.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Learning Hub.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Settings.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Settings-1.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Settings-2.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Settings-3.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Notification.png" alt="">
-        </div>
-        <div class="logo">
-            <img src="Notification-1.png" alt="">
-                   </div>
-        <div class="logo">
-            <img src="Notification-2.png" alt="">
-                   </div>
-        <div class="logo">
-            <img src="recruiter/Dashboard.png" alt="">
-              </div>
-        <div class="logo">
-            <img src="recruiter/Dashboard-1.png" alt="">
-                </div>
-        <div class="logo">
-            <img src="recruiter/Complete Profile.png" alt="">
-            
-        </div>
-
-        <div class="logo">
-            <img src="recruiter/Complete Profile-1.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="recruiter/My Profile.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/My Profile-1.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Search Talents.png" alt="">
-                   </div>
-        <div class="logo">
-            <img src="recruiter/Search Talents-1.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="recruiter/Search Talents-2.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="recruiter/Applicants.png" alt="">
-              </div>
-        <div class="logo">
-            <img src="recruiter/Applicants-1.png" alt="">
-                 </div>
-        <div class="logo">
-            <img src="recruiter/Applicants.png" alt="">
-                 </div>
-        <div class="logo">
-            <img src="recruiter/Listings.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="recruiter/Listings-1.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Mentorship.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Mentorship-1.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Mentorship-2.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Mentorship-3.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Mentorship-4.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Success Booking.png" alt="">
-                    </div>
-        <div class="logo">
-            <img src="recruiter/request/Request.png" alt="">
-           
-        </div>
-        <div class="logo">
-            <img src="recruiter/request/Mentorship.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/request/Mentorship-1.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/request/Mentorship-2.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/request/Mentorship-3.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="recruiter/Learning Hub.png" alt="">
-                 </div>
-        <div class="logo">
-            <img src="mentor/Dashboard.png" alt="">
-              </div>
-        <div class="logo">
-            <img src="mentor/Dashboard-1.png" alt="">
-                </div>
-        <div class="logo">
-            <img src="mentor/Complete Profile.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="mentor/Complete Profile-1.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="mentor/Complete Profile-2.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="mentor/Complete Profile-3.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="mentor/Complete Profile-4.png" alt="">
-            
-        </div>
-        <div class="logo">
-            <img src="mentor/My Profile.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="mentor/My Profile-1.png" alt="">
-               </div>
-        <div class="logo">
-            <img src="mentor/Request.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Request-1.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Request-2.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Request-3.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Request-4.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Mentees.png" alt="">
-            </div>
-        <div class="logo">
-            <img src="mentor/Mentees/Empty.png" alt="">
-                 </div>
-        <div class="logo">
-            <img src="mentor/Learning Hub.png" alt="">
-                 </div>
     </main>
 </body>
+    <script>
+    const btn = document.getElementById('toggleBtn');
+    const box = document.getElementById('box');
+
+    btn.addEventListener('click', () => {
+      box.classList.toggle('hidden'); 
+    });
+  </script>
 </html>  
